@@ -9,6 +9,12 @@
         body {
             background-color: #fff; 
             box-sizing: border-box;
+            color: #734214;
+        }
+
+        ol {
+            list-style: inside;
+            list-style-type: upper-roman;
         }
 
         a:link {
@@ -59,8 +65,11 @@
             transform: scale(1.25);
         }
 
-        td {
-            width: 200px;
+        .innert {
+            background-color: #734214;
+            color: #f6ecdd;
+            border-radius: 20px;
+            padding: 30px;
         }
 
         @media screen and (max-width: 600px) {
@@ -100,26 +109,24 @@
         <!--Header row - this contains the logo. Should NOT be altered in any major way.-->
         <tr id="header-row" align="center" width="800px">
             <td style="padding-bottom: 20px;">
-                <a href="https://leasetaurant.com">
-                    <img width="400" title="Leasetaurant" src="letseat.gif">
-                </a>
+                <img width="400" title="Leasetaurant" src="letseat.gif">
             </td>
         </tr>
     </table>
 
     <!--The main table. This box will contain all the content.-->
-    <table id="body" height="800" width="800" align="center" cellspacing="0" cellpadding ="0" border="0"  style="background-color: #fff; margin: auto; max-width: 800px; border-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-collapse: collapse;">
+    <table id="body" align="center" cellspacing="0" cellpadding ="0" border="0"  style="background-color: #fff; margin: auto; border-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-collapse: collapse;">
         
         <!--Headline & Featuring Products - Two rows. First row contains banner image. Second row contains 3 products.-->
         <tr style="margin-top: 50px;">
             <td align="center" style="padding-bottom: 20px; vertical-align: top;">
-                <img src="recipechickentikka.png">
+                <img width="425" src="recipechickentikka.png">
             </td>
             <td>
-                <table>
+                <table border="0" style="border-spacing: 12px;">
                     <tr>
-                        <td style="padding-bottom: 20px; vertical-align: top;">
-                            Ingredients (for the chicken marinade):
+                        <td class="innert" width="350" style="padding-bottom: 20px; vertical-align: top;">
+                            <strong>Ingredients (for the chicken marinade):</strong>
                             <ul>
                                 <li>
                                     28 oz (800g) boneless and skinless chicken thighs cut into bite-sized pieces
@@ -150,8 +157,8 @@
                                 </li>
                             </ul>
                         </td>
-                        <td style="padding-bottom: 20px; vertical-align: top;">
-                            Ingredients (for the sauce):
+                        <td class="innert" width="375" style="padding-bottom: 20px; vertical-align: top;">
+                            <strong>Ingredients (for the sauce):</strong>
                             <ul>
                                 <li>
                                     2 tablespoons of vegetable/canola oil
@@ -212,69 +219,54 @@
             </td>
         </tr>
         <tr>
-            <td colspan = "2">
-                Instructions:
-                fioahtiure htgauh taiosafhguhr uarhgtaurhg iuartghfauhisu wiurthf uihuhg dughufgh dugh udhg udh uorhtgaouirh tuorhtruhtg
+            <td colspan="2" width="700" border="1" style="background-color: #f6ecdd; padding: 20px 40px; border-color: #734214;">
+                <p>Instructions</p>
+                <p>
+                    <ol>
+                        <li>
+                            In a bowl, combine chicken with all of the ingredients for the chicken marinade; let marinate for 10 minutes to an hour (or overnight if time allows).
+                        </li>
+                        <li>
+                            Heat oil in a large skillet or pot over medium-high heat. When sizzling, add chicken pieces in batches of two or three, making sure not to crowd the pan. Fry until browned for only 3 minutes on each side. Set aside and keep warm. (You will finish cooking the chicken in the sauce.)
+                        </li>
+                        <li>
+                            Melt the butter in the same pan. Fry the onions until soft (about 3 minutes) while scraping up any browned bits stuck on the bottom of the pan. 
+                        </li>
+                        <li>
+                            Add garlic and ginger and sauté for 1 minute until fragrant, then add garam masala, cumin, turmeric and coriander. Fry for about 20 seconds until fragrant, while stirring occasionally.
+                        </li>
+                        <li>
+                            Pour in the tomato puree, chili powders and salt. Let simmer for about 10-15 minutes, stirring occasionally until sauce thickens and becomes a deep brown red colour.
+                        </li>
+                        <li>
+                            Stir the cream and sugar through the sauce. Add the chicken and its juices back into the pan and cook for an additional 8-10 minutes until chicken is cooked through and the sauce is thick and bubbling. Pour in the water to thin out the sauce, if needed.
+                        </li>
+                        <li>
+                            Garnish with cilantro (coriander) and serve with hot garlic butter rice and fresh homemade Naan bread!
+                        </li>
+                    </ol>
+                </p>
+
+                <p>Credit for recipe goes to <a href="https://cafedelites.com/chicken-tikka-masala/">cafedelights</a></p>
             </td>
         </tr>
     </table>
 
-    <table>
+    <table align="center">
         <tr align="center" style="font-size: 12px;">
             <td style="padding: 5px;">
-                <a title="Countertop Gas Griddle" href="https://leasetaurant.com/ggt-36s-36-griddle-gas-countertop/">
+                <a title="Countertop Gas Griddle" href="">
                     <img class="products" height="150" src="https://cdn11.bigcommerce.com/s-wrhxqvatpa/images/stencil/1280x1280/products/466121/461487/picture__17612.1637601068.png"><br><br>
                     <strong>36" Countertop Gas Griddle</strong><br>
                     Workline Griddle, gas, countertop, 3/4 thick smooth polished steel plate, thermostatic controls...<br>
-                    <div style="color:red; font-size: 16px;"><em>As Low As <strong>$106.42/mo!</strong></em></div>
                 </a>
             </td>
             <td style="padding: 5px;">
-                <a title="Food Pan Warmer" href="https://leasetaurant.com/cw-3a-14-food-pan-warmer-rethermalizer-countertop/">
+                <a title="Food Pan Warmer" href="">
                     <img class="products" height="150" src="https://cdn11.bigcommerce.com/s-wrhxqvatpa/images/stencil/640w/products/466117/461483/picture__57323.1637601056.png"><br><br>
                     <strong>14" Food Pan Warmer/Rethermalizer</strong><br>
                     X*PERT™ Food Pan Warmer/Rethermalizer, electric, countertop, 28-1/2 quart capacity...<br>
-                    <div style="color:red; font-size: 16px;"><em>As Low As <strong>$30.73/mo!</strong></em></div>
                 </a>
-            </td>
-            <td style="padding: 5px;">
-                <a title="Countertop Gas Broiler" href="https://leasetaurant.com/gcrb-24s-24-charbroiler-gas-countertop/">
-                    <img class="products" height="150" src="https://cdn11.bigcommerce.com/s-wrhxqvatpa/images/stencil/640w/products/466120/461486/picture__21797.1637601065.png"><br><br>
-                    <strong>36" Countertop Gas Charbroiler</strong><br>
-                    Workline CharRock Broiler, gas, countertop, thin-line removable cast iron grates...<br>
-                    <div style="color:red; font-size: 16px;"><em>As Low As <strong>$52.89/mo!</strong></em></div>
-                </a>
-            </td>
-        </tr>
-    </table>
-
-    <!--Footer. Contains menu bar, address and phone number, email, and social media links.-->
-    <table id="footer" align="center" width="100%" height="100" cellspacing="0" cellpadding ="0" border="0"  style="padding: 25px; color: black; background-color: #efefef; margin: auto; border-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-collapse: collapse; border-style: hidden;">
-
-        <!--Menu Bar - Navigates customers to points of interest on our website.-->
-        <tr align="center" height="15" style="font-size: 12px;" >
-            <td style="padding: 10px">
-                <div>
-                    <a title="About Us" href="https://leasetaurant.com/about-us"><strong>About Us</strong></a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-                    <a title="Apply Now" href="https://leasetaurant.com/apply-for-lease/"><strong>Apply For Lease</strong></a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-                    <a title="Call Now" href="tel:8889806951"><strong>Call Us Today</strong></a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-                    <a title="Email Now" href="mailto:info@leasetaurant.com?subject=I'm Interested in Restaurant Equipment"><strong>Email Us Today</strong></a>
-                </div>
-            </td>
-        </tr>
-        <tr align="center" height="25" style="font-size: 12px;" >
-            <td style="padding: 10px">
-                <div>
-                    220 Congress Park Drive, Delray Beach FL 33445<br>
-                    <a title="Call Us at (888) 980-6951" href="tel:8889806951"><strong>(888) 980-6951</strong></a><br>
-                    <a title="Email Us at info@leasetaurant.com" href="mailto:info@leasetaurant.com?subject=I'm Interested in Restaurant Equipment"><strong>info@leasetaurant.com</strong></a><br>
-                </div>
-            </td>
-        </tr>
-        <tr align="center" height="55" style="font-size: 12px;">
-            <td>
-                <a href="https://www.facebook.com/Leasetaurant/?ref=nf" target="_blank"><img id="Facebook" alt="Facebook" class="social-media" height="32" src="https://myleaseapproved-dev.s3.amazonaws.com/uploads/email_image/image/100/facebook2x.png" style=" height: auto; border: 0;" title="facebook" width="32"/></a>
-                <a href="https://www.instagram.com/leasetaurant/" target="_blank"><img id="Instagram" class="social-media" alt="Instagram" height="32" src="https://myleaseapproved-dev.s3.amazonaws.com/uploads/email_image/image/101/instagram2x.png" style=" height: auto; border: 0;" title="instagram" width="32"/></a>
             </td>
         </tr>
     </table>
