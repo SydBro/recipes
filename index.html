@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #fff; 
+            box-sizing: border-box;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+        div a:link{
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #7ed957;
+        }
+
+        div a:hover{
+            text-decoration: underline;
+            color: #7ed957;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+        div a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited:hover {
+            text-decoration: none;
+            color: #7ed957;
+        }
+
+        div a:visited:hover {
+            text-decoration: none;
+            color: #7ed957;
+        }
+
+        a img.products {
+            transition: transform .2s;
+        }
+
+        a img.products:hover{
+            transform: scale(1.25);
+        }
+
+        td {
+            width: 200px;
+        }
+
+        @media screen and (max-width: 600px) {
+            * {
+                font-size: 16px;
+                table-layout: auto;
+                width: 100%;
+            }
+            .products {
+                object-fit: scale-down;
+            }
+            .social-media {
+                width: 50px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            * {
+                font-size: 16px;
+                table-layout: auto;
+                width: 100%;
+            }
+            .products {
+                object-fit: scale-down;
+            }
+            .social-media {
+                width: 50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Header table. This table contains header info like the logo and menu bar.-->
+    <table id="header" align="center" width="100%" cellspacing="0" cellpadding ="0" border="0"  style="padding:25px; margin: auto; background-color: white; border-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-collapse: collapse; text-align: center">
+        <!--Header row - this contains the logo. Should NOT be altered in any major way.-->
+        <tr id="header-row" align="center" width="800px">
+            <td style="padding-bottom: 20px;">
+                <a href="https://leasetaurant.com">
+                    <img width="400" title="Leasetaurant" src="letseat.gif">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!--The main table. This box will contain all the content.-->
+    <table id="body" height="800" width="800" align="center" cellspacing="0" cellpadding ="0" border="0"  style="background-color: #fff; margin: auto; max-width: 800px; border-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-collapse: collapse;">
+        
+        <!--Headline & Featuring Products - Two rows. First row contains banner image. Second row contains 3 products.-->
+        <tr style="margin-top: 50px;">
+            <td align="center" style="padding-bottom: 20px; vertical-align: top;">
+                <img src="recipechickentikka.png">
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td style="padding-bottom: 20px; vertical-align: top;">
+                            Ingredients (for the chicken marinade):
+                            <ul>
+                                <li>
+                                    28 oz (800g) boneless and skinless chicken thighs cut into bite-sized pieces
+                                </li>
+                                <li>
+                                    1 cup plain yogurt
+                                </li>
+                                <li>
+                                    1 1/2 tablespoons minced garlic
+                                </li>
+                                <li>
+                                    1 tablespoon ginger
+                                </li>
+                                <li>
+                                    2 teaspoons garam masala
+                                </li>
+                                <li>
+                                    1 teaspoon turmeric
+                                </li>
+                                <li>
+                                    1 teaspoon ground cumin
+                                </li>
+                                <li>
+                                    1 teaspoon Kashmiri chili (or 1/2 teaspoon ground red chili powder)
+                                </li>
+                                <li>
+                                    1 teaspoon of salt
+                                </li>
+                            </ul>
+                        </td>
+                        <td style="padding-bottom: 20px; vertical-align: top;">
+                            Ingredients (for the sauce):
+                            <ul>
+                                <li>
+                                    2 tablespoons of vegetable/canola oil
+                                </li>
+                                <li>
+                                    2 tablespoons butter
+                                </li>
+                                <li>
+                                    2 small onions (or 1 large onion) finely diced
+                                </li>
+                                <li>
+                                    1 1/2 tablespoons garlic finely grated
+                                </li>
+                                <li>
+                                    1 tablespoon ginger finely grated
+                                </li>
+                                <li>
+                                    1 1/2 teaspoons garam masala
+                                </li>
+                                <li>
+                                    1 1/2 teaspoons ground cumin
+                                </li>
+                                <li>
+                                    1 teaspoon turmeric powder
+                                </li>
+                                <li>
+                                    1 teaspoon ground coriander
+                                </li>
+                                <li>
+                                    14 oz (400g) tomato puree (tomato sauce/Passata)
+                                </li>
+                                <li>
+                                    1 teaspoon Kashmiri chili (optional for colour and flavour)
+                                </li>
+                                <li>
+                                    1 teaspoon ground red chili powder (adjust to your taste preference)
+                                </li>
+                                <li>
+                                    1 teaspoon salt
+                                </li>
+                                <li>
+                                    1 1/4 cups of heavy or thickened cream (use evaporated milk for lower calories)
+                                </li>
+                                <li>
+                                    1 teaspoon brown sugar
+                                </li>
+                                <li>
+                                    1/4 cup water if needed
+                                </li>
+                                <li>
+                                    4 tablespoons Fresh cilantro or coriander to garnish
+                                </li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan = "2">
+                Instructions:
+                fioahtiure htgauh taiosafhguhr uarhgtaurhg iuartghfauhisu wiurthf uihuhg dughufgh dugh udhg udh uorhtgaouirh tuorhtruhtg
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr align="center" style="font-size: 12px;">
+            <td style="padding: 5px;">
+                <a title="Countertop Gas Griddle" href="https://leasetaurant.com/ggt-36s-36-griddle-gas-countertop/">
+                    <img class="products" height="150" src="https://cdn11.bigcommerce.com/s-wrhxqvatpa/images/stencil/1280x1280/products/466121/461487/picture__17612.1637601068.png"><br><br>
+                    <strong>36" Countertop Gas Griddle</strong><br>
+                    Workline Griddle, gas, countertop, 3/4 thick smooth polished steel plate, thermostatic controls...<br>
+                    <div style="color:red; font-size: 16px;"><em>As Low As <strong>$106.42/mo!</strong></em></div>
+                </a>
+            </td>
+            <td style="padding: 5px;">
+                <a title="Food Pan Warmer" href="https://leasetaurant.com/cw-3a-14-food-pan-warmer-rethermalizer-countertop/">
+                    <img class="products" height="150" src="https://cdn11.bigcommerce.com/s-wrhxqvatpa/images/stencil/640w/products/466117/461483/picture__57323.1637601056.png"><br><br>
+                    <strong>14" Food Pan Warmer/Rethermalizer</strong><br>
+                    X*PERT™ Food Pan Warmer/Rethermalizer, electric, countertop, 28-1/2 quart capacity...<br>
+                    <div style="color:red; font-size: 16px;"><em>As Low As <strong>$30.73/mo!</strong></em></div>
+                </a>
+            </td>
+            <td style="padding: 5px;">
+                <a title="Countertop Gas Broiler" href="https://leasetaurant.com/gcrb-24s-24-charbroiler-gas-countertop/">
+                    <img class="products" height="150" src="https://cdn11.bigcommerce.com/s-wrhxqvatpa/images/stencil/640w/products/466120/461486/picture__21797.1637601065.png"><br><br>
+                    <strong>36" Countertop Gas Charbroiler</strong><br>
+                    Workline CharRock Broiler, gas, countertop, thin-line removable cast iron grates...<br>
+                    <div style="color:red; font-size: 16px;"><em>As Low As <strong>$52.89/mo!</strong></em></div>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!--Footer. Contains menu bar, address and phone number, email, and social media links.-->
+    <table id="footer" align="center" width="100%" height="100" cellspacing="0" cellpadding ="0" border="0"  style="padding: 25px; color: black; background-color: #efefef; margin: auto; border-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-collapse: collapse; border-style: hidden;">
+
+        <!--Menu Bar - Navigates customers to points of interest on our website.-->
+        <tr align="center" height="15" style="font-size: 12px;" >
+            <td style="padding: 10px">
+                <div>
+                    <a title="About Us" href="https://leasetaurant.com/about-us"><strong>About Us</strong></a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+                    <a title="Apply Now" href="https://leasetaurant.com/apply-for-lease/"><strong>Apply For Lease</strong></a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+                    <a title="Call Now" href="tel:8889806951"><strong>Call Us Today</strong></a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+                    <a title="Email Now" href="mailto:info@leasetaurant.com?subject=I'm Interested in Restaurant Equipment"><strong>Email Us Today</strong></a>
+                </div>
+            </td>
+        </tr>
+        <tr align="center" height="25" style="font-size: 12px;" >
+            <td style="padding: 10px">
+                <div>
+                    220 Congress Park Drive, Delray Beach FL 33445<br>
+                    <a title="Call Us at (888) 980-6951" href="tel:8889806951"><strong>(888) 980-6951</strong></a><br>
+                    <a title="Email Us at info@leasetaurant.com" href="mailto:info@leasetaurant.com?subject=I'm Interested in Restaurant Equipment"><strong>info@leasetaurant.com</strong></a><br>
+                </div>
+            </td>
+        </tr>
+        <tr align="center" height="55" style="font-size: 12px;">
+            <td>
+                <a href="https://www.facebook.com/Leasetaurant/?ref=nf" target="_blank"><img id="Facebook" alt="Facebook" class="social-media" height="32" src="https://myleaseapproved-dev.s3.amazonaws.com/uploads/email_image/image/100/facebook2x.png" style=" height: auto; border: 0;" title="facebook" width="32"/></a>
+                <a href="https://www.instagram.com/leasetaurant/" target="_blank"><img id="Instagram" class="social-media" alt="Instagram" height="32" src="https://myleaseapproved-dev.s3.amazonaws.com/uploads/email_image/image/101/instagram2x.png" style=" height: auto; border: 0;" title="instagram" width="32"/></a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
