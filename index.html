@@ -10,6 +10,7 @@
             background-color: #fff; 
             box-sizing: border-box;
             color: #734214;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         ol {
@@ -17,52 +18,61 @@
             list-style-type: upper-roman;
         }
 
+        li {
+            margin: 5px;
+        }
+
         a:link {
             text-decoration: none;
-            color: black;
+            color: teal;
         }
 
         div a:link{
             text-decoration: none;
-            color: black;
+            color: teal;
         }
 
         a:hover {
             text-decoration: underline;
-            color: #7ed957;
+            color: teal;
         }
 
         div a:hover{
             text-decoration: underline;
-            color: #7ed957;
+            color: teal;
         }
 
         a:visited {
             text-decoration: none;
-            color: black;
+            color: teal;
         }
 
         div a:visited {
             text-decoration: none;
-            color: black;
+            color: teal;
         }
 
         a:visited:hover {
             text-decoration: none;
-            color: #7ed957;
+            color: teal;
         }
 
         div a:visited:hover {
             text-decoration: none;
-            color: #7ed957;
+            color: teal;
         }
 
-        a img.products {
+        a .recipes {
+            color: #f6ecdd;
+        }
+
+        a img.recipes {
+            border-radius: 30px;
             transition: transform .2s;
         }
 
-        a img.products:hover{
-            transform: scale(1.25);
+        a img.recipes:hover{
+            transform: scale(1.15);
         }
 
         .innert {
@@ -78,7 +88,7 @@
                 table-layout: auto;
                 width: 100%;
             }
-            .products {
+            .recipes {
                 object-fit: scale-down;
             }
             .social-media {
@@ -92,7 +102,7 @@
                 table-layout: auto;
                 width: 100%;
             }
-            .products {
+            .recipes {
                 object-fit: scale-down;
             }
             .social-media {
@@ -104,172 +114,42 @@
 </head>
 <body>
 
-    <!--Header table. This table contains header info like the logo and menu bar.-->
-    <table id="header" align="center" width="100%" cellspacing="0" cellpadding ="0" border="0"  style="padding:25px; margin: auto; background-color: white; border-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-collapse: collapse; text-align: center">
+    <!--Header table. This table contains header info like the logo.-->
+    <table id="header" align="center" width="100%" cellspacing="0" cellpadding ="0" border="0"  style="padding:25px; margin: auto; background-color: white; border-color: black; border-collapse: collapse; text-align: center">
         <!--Header row - this contains the logo. Should NOT be altered in any major way.-->
         <tr id="header-row" align="center" width="800px">
             <td style="padding-bottom: 20px;">
-                <img width="400" title="Leasetaurant" src="letseat.gif">
+                <a href="index.html">
+                    <img width="400" title="Let's Eat!" src="img/letseat.gif">
+                </a>
             </td>
         </tr>
     </table>
 
-    <!--The main table. This box will contain all the content.-->
-    <table id="body" align="center" cellspacing="0" cellpadding ="0" border="0"  style="background-color: #fff; margin: auto; border-color: black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-collapse: collapse;">
-        
-        <!--Headline & Featuring Products - Two rows. First row contains banner image. Second row contains 3 products.-->
+    <!--This table contains images that link to each of the three recipe pages.-->
+    <table id="body" align="center" cellspacing="0" cellpadding ="0" border="0"  style="background-color: #fff; margin: auto; border-collapse: collapse;">
         <tr style="margin-top: 50px;">
-            <td align="center" style="padding-bottom: 20px; vertical-align: top;">
-                <img width="425" src="recipechickentikka.png">
-            </td>
-            <td>
-                <table border="0" style="border-spacing: 12px;">
-                    <tr>
-                        <td class="innert" width="350" style="padding-bottom: 20px; vertical-align: top;">
-                            <strong>Ingredients (for the chicken marinade):</strong>
-                            <ul>
-                                <li>
-                                    28 oz (800g) boneless and skinless chicken thighs cut into bite-sized pieces
-                                </li>
-                                <li>
-                                    1 cup plain yogurt
-                                </li>
-                                <li>
-                                    1 1/2 tablespoons minced garlic
-                                </li>
-                                <li>
-                                    1 tablespoon ginger
-                                </li>
-                                <li>
-                                    2 teaspoons garam masala
-                                </li>
-                                <li>
-                                    1 teaspoon turmeric
-                                </li>
-                                <li>
-                                    1 teaspoon ground cumin
-                                </li>
-                                <li>
-                                    1 teaspoon Kashmiri chili (or 1/2 teaspoon ground red chili powder)
-                                </li>
-                                <li>
-                                    1 teaspoon of salt
-                                </li>
-                            </ul>
-                        </td>
-                        <td class="innert" width="375" style="padding-bottom: 20px; vertical-align: top;">
-                            <strong>Ingredients (for the sauce):</strong>
-                            <ul>
-                                <li>
-                                    2 tablespoons of vegetable/canola oil
-                                </li>
-                                <li>
-                                    2 tablespoons butter
-                                </li>
-                                <li>
-                                    2 small onions (or 1 large onion) finely diced
-                                </li>
-                                <li>
-                                    1 1/2 tablespoons garlic finely grated
-                                </li>
-                                <li>
-                                    1 tablespoon ginger finely grated
-                                </li>
-                                <li>
-                                    1 1/2 teaspoons garam masala
-                                </li>
-                                <li>
-                                    1 1/2 teaspoons ground cumin
-                                </li>
-                                <li>
-                                    1 teaspoon turmeric powder
-                                </li>
-                                <li>
-                                    1 teaspoon ground coriander
-                                </li>
-                                <li>
-                                    14 oz (400g) tomato puree (tomato sauce/Passata)
-                                </li>
-                                <li>
-                                    1 teaspoon Kashmiri chili (optional for colour and flavour)
-                                </li>
-                                <li>
-                                    1 teaspoon ground red chili powder (adjust to your taste preference)
-                                </li>
-                                <li>
-                                    1 teaspoon salt
-                                </li>
-                                <li>
-                                    1 1/4 cups of heavy or thickened cream (use evaporated milk for lower calories)
-                                </li>
-                                <li>
-                                    1 teaspoon brown sugar
-                                </li>
-                                <li>
-                                    1/4 cup water if needed
-                                </li>
-                                <li>
-                                    4 tablespoons Fresh cilantro or coriander to garnish
-                                </li>
-                            </ul>
-                        </td>
-                        
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" width="700" border="1" style="background-color: #f6ecdd; padding: 20px 40px; border-color: #734214;">
-                <p>Instructions</p>
-                <p>
-                    <ol>
-                        <li>
-                            In a bowl, combine chicken with all of the ingredients for the chicken marinade; let marinate for 10 minutes to an hour (or overnight if time allows).
-                        </li>
-                        <li>
-                            Heat oil in a large skillet or pot over medium-high heat. When sizzling, add chicken pieces in batches of two or three, making sure not to crowd the pan. Fry until browned for only 3 minutes on each side. Set aside and keep warm. (You will finish cooking the chicken in the sauce.)
-                        </li>
-                        <li>
-                            Melt the butter in the same pan. Fry the onions until soft (about 3 minutes) while scraping up any browned bits stuck on the bottom of the pan. 
-                        </li>
-                        <li>
-                            Add garlic and ginger and sauté for 1 minute until fragrant, then add garam masala, cumin, turmeric and coriander. Fry for about 20 seconds until fragrant, while stirring occasionally.
-                        </li>
-                        <li>
-                            Pour in the tomato puree, chili powders and salt. Let simmer for about 10-15 minutes, stirring occasionally until sauce thickens and becomes a deep brown red colour.
-                        </li>
-                        <li>
-                            Stir the cream and sugar through the sauce. Add the chicken and its juices back into the pan and cook for an additional 8-10 minutes until chicken is cooked through and the sauce is thick and bubbling. Pour in the water to thin out the sauce, if needed.
-                        </li>
-                        <li>
-                            Garnish with cilantro (coriander) and serve with hot garlic butter rice and fresh homemade Naan bread!
-                        </li>
-                    </ol>
-                </p>
-
-                <p>Credit for recipe goes to <a href="https://cafedelites.com/chicken-tikka-masala/">cafedelights</a></p>
-            </td>
-        </tr>
-    </table>
-
-    <table align="center">
-        <tr align="center" style="font-size: 12px;">
-            <td style="padding: 5px;">
-                <a title="Countertop Gas Griddle" href="">
-                    <img class="products" height="150" src="https://cdn11.bigcommerce.com/s-wrhxqvatpa/images/stencil/1280x1280/products/466121/461487/picture__17612.1637601068.png"><br><br>
-                    <strong>36" Countertop Gas Griddle</strong><br>
-                    Workline Griddle, gas, countertop, 3/4 thick smooth polished steel plate, thermostatic controls...<br>
+            <td align="center">
+                <a title="Chicken Tikka Masala" href="chicken-tikka-masala.html">
+                    <img width="425" src="img/chicken-tikka-masala.png">
                 </a>
             </td>
-            <td style="padding: 5px;">
-                <a title="Food Pan Warmer" href="">
-                    <img class="products" height="150" src="https://cdn11.bigcommerce.com/s-wrhxqvatpa/images/stencil/640w/products/466117/461483/picture__57323.1637601056.png"><br><br>
-                    <strong>14" Food Pan Warmer/Rethermalizer</strong><br>
-                    X*PERT™ Food Pan Warmer/Rethermalizer, electric, countertop, 28-1/2 quart capacity...<br>
+            <td align="center">
+                <a title="Cheddar's Monte Cristo" href="cheddars-monte-cristo.html">
+                    <img width="425" src="img/cheddars-monte-cristo.png">
+                </a>
+            </td>
+            <td align="center">
+                <a title="Strawberry Lemonade" href="strawberry-lemonade.html">
+                    <img width="425" src="img/strawberry-lemonade.png">
                 </a>
             </td>
         </tr>
     </table>
 
+    <a target="_blank" title="SydBro @ GitHub" href="https://github.com/SydBro/recipes">
+        <p align="center" style="margin: 25px; font-weight: bold; text-align: center; font-size: 20px;">Sydney Brown <img width="20" src="img/GitHub-Mark-32px.png"></p>
+    </a>
+    
 </body>
 </html>

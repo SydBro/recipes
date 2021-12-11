@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #fff; 
+            box-sizing: border-box;
+            color: #734214;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        ol {
+            list-style: inside;
+            list-style-type: upper-roman;
+        }
+
+        li {
+            margin: 5px;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: teal;
+        }
+
+        div a:link{
+            text-decoration: none;
+            color: teal;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: teal;
+        }
+
+        div a:hover{
+            text-decoration: underline;
+            color: teal;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: teal;
+        }
+
+        div a:visited {
+            text-decoration: none;
+            color: teal;
+        }
+
+        a:visited:hover {
+            text-decoration: none;
+            color: teal;
+        }
+
+        div a:visited:hover {
+            text-decoration: none;
+            color: teal;
+        }
+
+        a .recipes {
+            color: #f6ecdd;
+        }
+
+        a img.recipes {
+            border-radius: 30px;
+            transition: transform .2s;
+        }
+
+        a img.recipes:hover{
+            transform: scale(1.15);
+        }
+
+        .innert {
+            background-color: #734214;
+            color: #f6ecdd;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            * {
+                font-size: 16px;
+                table-layout: auto;
+                width: 100%;
+            }
+            .recipes {
+                object-fit: scale-down;
+            }
+            .social-media {
+                width: 50px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            * {
+                font-size: 16px;
+                table-layout: auto;
+                width: 100%;
+            }
+            .recipes {
+                object-fit: scale-down;
+            }
+            .social-media {
+                width: 50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Header table. This table contains header info like the logo and menu bar.-->
+    <table id="header" align="center" width="100%" cellspacing="0" cellpadding ="0" border="0"  style="padding:25px; margin: auto; background-color: white; border-color: black; border-collapse: collapse; text-align: center">
+        <!--Header row - this contains the logo. Should NOT be altered in any major way.-->
+        <tr id="header-row" align="center" width="800px">
+            <td style="padding-bottom: 20px;">
+                <a href="index.html">
+                    <img width="400" title="Let's Eat!" src="img/letseat.gif">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!--The main table. This box will contain all the content.-->
+    <table id="body" align="center" cellspacing="0" cellpadding ="0" border="0"  style="background-color: #fff; margin: auto; border-collapse: collapse;">
+        
+        <tr style="margin-top: 50px;">
+            <td align="center" style="padding-bottom: 20px; vertical-align: top;">
+                <img width="425" src="img/cheddars-monte-cristo.png">
+            </td>
+            <td>
+                <table border="0" style="border-spacing: 12px;">
+                    <tr>
+                        <td class="innert" width="350" style="padding-bottom: 20px; vertical-align: top;">
+                            <strong>Ingredients:</strong>
+                            <ul>
+                                <li>
+                                    4 slices of bread
+                                </li>
+                                <li>
+                                    4 slices of smoked turkey 
+                                </li>
+                                <li>
+                                    4 slices of ham
+                                </li>
+                                <li>
+                                    2 slices American cheese
+                                </li>
+                                <li>
+                                    2 slices of Monterey Jack cheese
+                                </li>
+                                <li>
+                                    2 cups prepared pancake mix
+                                </li>
+                                <li>
+                                    1 tablespoon powdered sugar
+                                </li>
+                                <li>
+                                    vegetable oil for frying
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" width="700" border="1" style="background-color: #f6ecdd; padding: 20px 40px; border-color: #734214;">
+                <strong>Instructions:</strong>
+                <p>
+                    <ol>
+                        <li>
+                            Make the sandwiches ahead of time. Make two sandwiches with 2 slices of smoked turkey, 2 slices of ham, and one slice of American cheese, and one slice of Monterey jack cheese. 
+                        </li>
+                        <li>
+                            Wrap the sandwiches individually snuggly with plastic wrap. Place the sandwich in the refrigerator for at least one hour, or as long as overnight.  
+                        </li>
+                        <li>
+                            Preheat oil to about 320 degrees.
+                        </li>
+                        <li>
+                            Make enough pancake batter to prepare about six 4-inch pancakes. Gently unwrap the sandwiches and dip into the batter.
+                        </li>
+                        <li>
+                            Place the battered sandwich in hot oil and cook until golden. Flip the sandwich over so both sides brown evenly.
+                        </li>
+                        <li>
+                            Place the sandwich on a wire rack to drain. Allow the sandwich to rest for about 1 minute, then cut the sandwich, and dust with powdered sugar if desired.
+                        </li>
+                    </ol>
+                </p>
+
+                <p style="font-size: 12px; font-style: italic;">Credit for recipe goes to <a href="https://copykat.com/cheddars-monte-cristo-sandwich/">copykat</a></p>
+            </td>
+        </tr>
+    </table>
+
+    <!--The suggestions table. Contains images and links to other recipes.-->
+    <table align="center" style="border-spacing: 25px">
+        <tr>
+            <td colspan="2" align="center" style="padding: 20px;">
+                <strong>More Recipes:</strong>
+            </td>
+        </tr>
+        <tr align="center">
+            <td class="innert" width="200" style="padding: 20px;">
+                <a title="Chicken Tikka Masala" href="chicken-tikka-masala.html">
+                    <img class="recipes" height="150" src="img/chicken-tikka-masala-icon.jpg"><br><br>
+                    <strong>Chicken Tikka Masala</strong>
+                </a>
+            </td>
+            <td class="innert" width="200" style="padding: 20px;">
+                <a title="Strawberry Lemonade" href="strawberry-lemonade.html">
+                    <img class="recipes" height="150" src="img/strawberry-lemonade-icon.png"><br><br>
+                    <strong>Strawberry Lemonade</strong>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
